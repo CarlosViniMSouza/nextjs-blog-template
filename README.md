@@ -1,3 +1,3 @@
 # This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
-![localhost](../First_App_NextJS/nextjs-blog/images/localhost.jpg/)
+![localhost](https://github.com/CarlosViniMSouza/nextjs-blog-template/blob/main/nextjs-blog/images/localhost.jpg)
