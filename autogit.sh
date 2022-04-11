@@ -1,4 +1,6 @@
 git add .
-git commit -m "Navigate Between Pages -> made"
+git commit -m "Assets, Metadata, and CSS (part1) -> made"
 git push
-git status 
+git status
+
+// Next Lesson in: https://nextjs.org/learn/basics/assets-metadata-css
