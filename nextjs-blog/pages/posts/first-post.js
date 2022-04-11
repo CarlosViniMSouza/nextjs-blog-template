@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 /* Part1
@@ -17,6 +18,9 @@ Pages in Next.js
 export default function FirstPost() {
   return (
     <>
+      <Head>
+        <title>Fist Post App</title>
+      </Head>
       <h1>First Post ✌️</h1>
       <h2>
         <Link href="/">
