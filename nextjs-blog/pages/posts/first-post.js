@@ -6,7 +6,7 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>Fist Post App</title>
+        <title>First Post App</title>
       </Head>
       <h1>First Post ✌️</h1>
       <h2>
