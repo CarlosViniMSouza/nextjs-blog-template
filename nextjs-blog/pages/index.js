@@ -1,18 +1,21 @@
-import Layout from '../components/layout'
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPosts } from '../lib/posts'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home({ allPosts }) {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      {/* Keep the existing code here */}
-
-      {/* Add this <section> tag below the existing <section> tag */}
-
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section className={utilStyles.headingMd}>
+        <p>Welcome to my app NextJS</p>
+      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPosts.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               {title}
               <br />
@@ -28,10 +31,10 @@ export default function Home({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getSortedPosts()
+  const allPostsData = getSortedPostsData()
   return {
     props: {
-      allPosts
+      allPostsData
     }
   }
 }

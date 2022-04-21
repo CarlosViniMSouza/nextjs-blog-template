@@ -1,5 +1,5 @@
 git add .
-git commit -m "Next Top.: Implement getStaticProps"
+git commit -m "Next Top.: Polishing the Post Page"
 git push
 git status
 
