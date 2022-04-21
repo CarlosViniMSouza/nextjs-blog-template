@@ -37,10 +37,21 @@ export function getSortedPosts() {
   })
 }
 
+export async function getAllPostIds() {
+  const fileNames = fs.readdirSync(postsDirectory)
+
+  return fileNames.map(fileName => {
+    return {
+      params: {
+        id: fileName.replace(/\.md$/, '')
+      }
+    }
+  })
+}
+
 /* Note: In Next.js, the lib folder does not have an assigned name like the pages folder, so you can name it anything. It's usually convention to use lib or utils. */
 
 /*
-
 Fetch External API or Query Database
 
   Instead of the file system, fetch post data from an external API endpoint:

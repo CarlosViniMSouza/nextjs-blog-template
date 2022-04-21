@@ -1,5 +1,5 @@
 git add .
-git commit -m "Next Top.: Fetching Data at Request Time"
+git commit -m "Next Top.: Implement getStaticProps"
 git push
 git status
 
