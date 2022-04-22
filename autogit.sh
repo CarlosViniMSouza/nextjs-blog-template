@@ -1,6 +1,4 @@
 git add .
-git commit -m "Next Top.: Polishing the Post Page"
+git commit -m "Next Sub-Top.: Adding CSS"
 git push
 git status
-
-# LINK: https://nextjs.org/learn/basics/data-fetching/getstaticprops-details
