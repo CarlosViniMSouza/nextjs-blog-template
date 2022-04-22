@@ -1,4 +1,4 @@
-export default function handler(res) {
+export default (res) => {
   res.status(200).json({ text: "Hello" })
 }
 
