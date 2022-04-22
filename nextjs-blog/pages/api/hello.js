@@ -1,5 +1,4 @@
-export default function handler(req, req) {
-  const email = req.body.email
+export default function handler(res) {
   res.status(200).json({ text: "Hello" })
 }
 
