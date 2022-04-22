@@ -1,4 +1,4 @@
 git add .
-git commit -m "Fixed Errors (Part1)"
+git commit -m "Project return state -> working perfectly"
 git push
 git status
